@@ -34,11 +34,11 @@ int main(int argc, char *argv[])
 		if (global.content[0] != 35)
 		{
 			global.token = strtok(global.content, " \t\n");
-			global.opcode = global.token;
-			if (global.opcode != NULL)
+			global.code = global.token;
+			if (global.code != NULL)
 			{
 				global.token = strtok(NULL, " \t\n");
-				funct(global.opcode)(&stack, count);
+				funct(global.code)(&stack, count);
 			}
 			count++;
 		}
