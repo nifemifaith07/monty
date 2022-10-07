@@ -52,7 +52,7 @@ typedef struct instruction_s
  */
 typedef struct global_s
 {
-	char *opcode;
+	char *code;
 	char *token;
 	FILE *file;
 	char *content;
