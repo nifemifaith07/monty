@@ -22,15 +22,18 @@ void s_nop(stack_t **stack, unsigned int line_number)
 void s_sub(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp2;
+	stack_t *temp1;
 	int diff = 0;
 
 	if (*stack && (*stack)->next)
 	{
 		temp2 = (*stack)->next;
 		diff = temp2->n - (*stack)->n;
+		temp1 = *stack;
 		*stack = (*stack)->next;
 		if (*stack)
 			(*stack)->prev = NULL;
+		free(temp1);
 		(*stack)->n = diff;
 	}
 	else

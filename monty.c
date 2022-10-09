@@ -10,7 +10,7 @@ global_t global;
  */
 int main(int argc, char *argv[])
 {
-	ssize_t nbytes;
+	int nbytes = 0;
 	size_t nsize = 0;
 	unsigned int count = 1;
 	stack_t *stack = NULL;
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	global.file = fopen(argv[1], "r");
-	if (!global.file)
+	if (global.file == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);

@@ -65,10 +65,13 @@ extern global_t global;
 /* line_mod */
 char add_null(char *line);
 int line_len(char *line);
+
 /* free_stack */
 void free_stack(stack_t **stack);
+
 /*execute_op*/
 void (*funct(char *token))(stack_t **stack, unsigned int line_number);
+
 /*tasks*/
 void s_push(stack_t **stack, unsigned int line_number);
 void s_pall(stack_t **stack, unsigned int line_number);
@@ -79,6 +82,12 @@ void s_add(stack_t **stack, unsigned int line_number);
 void s_nop(stack_t **stack, unsigned int line_number);
 void s_sub(stack_t **stack, unsigned int line_number);
 void s_error(stack_t **stack, unsigned int line_number);
+void s_div(stack_t **stack, unsigned int line_number);
+void s_mul(stack_t **stack, unsigned int line_number);
+void s_mod(stack_t **stack, unsigned int line_number);
+void s_pchar(stack_t **stack, unsigned int line_number);
+void s_pstr(stack_t **stack, unsigned int line_number);
+
 /*verify*/
 void _verify(stack_t **stack, unsigned int line_number);
 int check_int(char *num);
