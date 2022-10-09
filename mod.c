@@ -1,12 +1,12 @@
 #include "monty.h"
 
- /**
+/**
  * s_mod - computes the rest of the division of the second top element of
  *	stack by the top element of the stack.
  * @stack: pointer to top/head
  * @line_number: current line number
  */
-void s_mod(stack_t **stack, unsigned int line_number) 
+void s_mod(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;
 	int mod = 0;

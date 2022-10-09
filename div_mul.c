@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * s_div - divides second top element of the stack by the top element of the stack
+ * s_div - divides second top element of the stack
+ *	by the top element of the stack
  * @stack: pointer to top/head
  * @line_number: current line number
  */
@@ -38,7 +39,8 @@ void s_div(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * s_mul - multiplies second top element of the stack by the top element of the stack
+ * s_mul - multiplies second top element of the stack
+ *	by the top element of the stack
  * @stack: pointer to top/head
  * @line_number: current line number
  */

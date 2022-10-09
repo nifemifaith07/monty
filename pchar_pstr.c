@@ -13,7 +13,7 @@ void s_pchar(stack_t **stack, unsigned int line_number)
 		free(global.content);
 		fclose(global.file);
 		free_stack(stack);
-		fprintf (stderr, "L%u: can't pchar, stack empty\n", line_number);
+		fprintf(stderr, "L%u: can't pchar, stack empty\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	if (temp->n >= 128 || temp->n < 0)
@@ -21,7 +21,7 @@ void s_pchar(stack_t **stack, unsigned int line_number)
 		free(global.content);
 		fclose(global.file);
 		free_stack(stack);
-		fprintf (stderr, "L%d: can't pchar, value out of range\n", line_number);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	printf("%c\n", temp->n);

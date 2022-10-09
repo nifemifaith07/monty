@@ -44,7 +44,7 @@ typedef struct instruction_s
  * struct global_s - global variables
  * @token: operand
  * @num: value to store in stack
- * @opcode: instruction
+ * @code: instruction
  * @file: pointer to monty file descriptor
  * @content: line content
  * @flag: change stack <-> queue
