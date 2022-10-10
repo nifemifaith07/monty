@@ -24,11 +24,15 @@ void (*funct(char *token))(stack_t **stack, unsigned int line_number)
 		{"#", s_nop},
 		{"pstr", s_pstr},
 		{"pchar", s_pchar},
+		{"rotl", s_rotl},
+		{"rotr", s_rotr},
+		{"stack", s_stack},
+		{"queue", s_queue},
 		{NULL, NULL}};
 	int i = 0;
 	int op;
 
-	while (i < 15)
+	while (i < 19)
 	{
 		op = strcmp(token, opco[i].opcode);
 		if (op == 0)

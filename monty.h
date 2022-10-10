@@ -87,7 +87,10 @@ void s_mul(stack_t **stack, unsigned int line_number);
 void s_mod(stack_t **stack, unsigned int line_number);
 void s_pchar(stack_t **stack, unsigned int line_number);
 void s_pstr(stack_t **stack, unsigned int line_number);
-
+void s_rotl(stack_t **stack, unsigned int line_number);
+void s_rotr(stack_t **stack, unsigned int line_number);
+void s_queue(stack_t **stack, unsigned int line_number);
+void s_stack(stack_t **stack, unsigned int line_number);
 /*verify*/
 void _verify(stack_t **stack, unsigned int line_number);
 int check_int(char *num);
